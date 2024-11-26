@@ -1,0 +1,150 @@
+.section__aboutMe{
+    min-height: 100vh; 
+    padding-top: 80px; 
+    box-sizing: border-box;
+}
+
+.aboutMe__tittle{
+    font-family: var(--font); 
+    text-align: center; 
+    color: var(--primary-color); 
+    margin-top: 40px; 
+    font-weigth: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-size: 24px; 
+}
+
+.aboutMe__data{
+    width: 80%;
+    margin-left: 10%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    margin-top: 60px; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+}
+
+.data__paragraph{
+    width: 500px; 
+    display:flex; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.paragraph__subtittle{
+    color: var(--primary-color);
+    font-family: var(--font);
+    font-size: 20px; 
+    font-style: italic;
+}
+
+.paragraph__tittle{
+    color: var(--primary-color);
+    font-family: var(--font);
+    font-size: 26px; 
+}
+
+.paragraph__text{
+    color: var(--primary-color);
+    font-family: var(--font);
+    line-height: 1.8;
+}
+
+.data__img{
+    border-radius: 15px;  
+    width: 260px; 
+    height: 250x; 
+}
+
+.paragph__button{
+    width: 180px; 
+    padding: 15px 0px; 
+    background-color: var(--background); 
+    color: var(--primary-color); 
+    border: 1px solid var(--primary-color); 
+    border-radius: 15px; 
+    font-family: var(--font);
+    text-transform: uppercase; 
+    font-weigth: bold; 
+    display: flex; 
+    align-items: ceneter; 
+    justify-content: center; 
+    text-decoration: none; 
+}
+
+.paragph__button:hover{
+    transform: scale(1.05); 
+    background-color: var(--primary-color); 
+    color: var(--background);
+}
+
+
+.aboutMe__skills{
+    height: full; 
+    width: 80%; 
+    margin-left: 10%; 
+    margin-top: 90px; 
+    background-color: var(--primary-color); 
+    border-radius: 30px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    padding-bottom: 60px; 
+    flex-wrap: wrap; 
+    color: var(--background); 
+}
+
+.skills__section{
+    width: 300px; 
+    height: auto; 
+    margin-top: 60px; 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+.skill__logo{
+    width:50px; 
+    height: 50px; 
+}
+
+.skill__tittle{
+    margin-top: 20px; 
+    font-family: var(--font); 
+    font-weight: 400; 
+    font-style: italic; 
+    font-size: 22px; 
+    text-align: center; 
+}
+
+.skill__list{
+    margin-top: 20px; 
+    height: 200px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.skill__item{
+    list-style-type: none; 
+    font-family: var(--font); 
+    font-size: 16px; 
+}
+
+@media (max-width: 868px){
+    .data__paragraph{
+        align-items: center; 
+    }
+    .paragraph__tittle{
+        text-align: center; 
+    }
+
+    .paragraph__text{
+        text-align: center; 
+    }
+}
+
+

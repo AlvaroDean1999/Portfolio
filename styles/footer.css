@@ -1,0 +1,110 @@
+.footer {
+  background-color: var(--background);
+  color: var(--primary-color);
+  padding: 40px 20px;
+  font-family: var(--font);
+  margin-top: 80px;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 20px;
+  aling-items: center;
+}
+
+.footer__title {
+  font-family: var(--font);
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.footer__contact p,
+.footer__nav,
+.footer__social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.footer__link {
+  color: var(--primary-color); 
+  text-decoration: none; 
+  position: relative; 
+  transition: color 0.5s ease; 
+  width: 300px; 
+}
+
+.footer__link::after {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 0; 
+  height: 1px; 
+  background-color: var(--primary-color); 
+  transition: width 0.5s ease; 
+}
+
+.footer__link:hover {
+  color: var(--primary-color); 
+}
+
+.footer__link:hover::after {
+  width: 100%; /
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social {
+  width: 300px;
+}
+
+.footer__social-link img {
+  width: 30px;
+  height: 30px;
+  filter: invert(50%) sepia(50%) saturate(400%) hue-rotate(260deg)
+    brightness(60%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer__social-link:hover img {
+  transform: scale(1.1);
+  filter: invert(50%) sepia(50%) saturate(400%) hue-rotate(260deg)
+    brightness(60%);
+  filter: invert(50%) sepia(40%) saturate(300%) hue-rotate(260deg)
+    brightness(120%);
+}
+
+.footer__bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer__bottom a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+

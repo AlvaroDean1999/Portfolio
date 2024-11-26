@@ -1,0 +1,16 @@
+:root{
+    --primary-color: #6b456c; 
+    --secundary-color: #c7ba99; 
+    --black: #000000; 
+    --font: "Montserrat"; 
+    --background: #e8deec; 
+}
+
+*{
+    padding: 0; 
+    margin: 0; 
+}
+
+body{
+    background-color: var(--background); 
+}
